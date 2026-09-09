@@ -8,7 +8,7 @@ import pandas as pd
 from dataclasses import dataclass
 import sys
 from src.ML_Project.utils import read_sql_data
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split # type: ignore
 
 # Data Class
 
@@ -50,5 +50,5 @@ class DataIngestion:
         except CustomException:
             raise
         except Exception as e:
-            raise CustomException(e, sys)
+            raise CustomException(e, sys) # type: ignore
 
