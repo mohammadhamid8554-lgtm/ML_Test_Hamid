@@ -1,9 +1,0 @@
-{
-    "python.defaultInterpreterPath": "${workspaceFolder}/venv/python.exe",
-    "python.envFile": "${workspaceFolder}/.env",
-    "python.terminal.useEnvFile": true,
-    "python.terminal.activateEnvironment": true,
-    "python.analysis.extraPaths": [
-        "${workspaceFolder}/venv/Lib/site-packages"
-    ]
-}
