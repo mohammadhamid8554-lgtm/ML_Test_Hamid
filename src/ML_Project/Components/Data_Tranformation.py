@@ -2,13 +2,12 @@ import sys
 from dataclasses import dataclass
 import numpy as np
 import pandas as pd
-from sklearn.compose import TransformedTargetRegressor
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.impute import SimpleImputer
-from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder, StandardScaler  # type: ignore[reportMissingModuleSource]
+from sklearn.impute import SimpleImputer  # type: ignore[reportMissingModuleSource]
+from sklearn.pipeline import Pipeline  # type: ignore[reportMissingModuleSource]
 from src.ML_Project.exception import CustomException
 from src.ML_Project.logger import logging
-from sklearn.compose import ColumnTransformer
+from sklearn.compose import ColumnTransformer  # type: ignore[reportMissingModuleSource]
 from src.ML_Project.utils import save_obj
 import os
 
