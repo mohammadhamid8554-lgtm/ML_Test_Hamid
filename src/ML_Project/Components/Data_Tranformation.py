@@ -2,12 +2,12 @@ import sys
 from dataclasses import dataclass
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder, StandardScaler  # type: ignore[reportMissingModuleSource]
-from sklearn.impute import SimpleImputer  # type: ignore[reportMissingModuleSource]
-from sklearn.pipeline import Pipeline  # type: ignore[reportMissingModuleSource]
+from sklearn.preprocessing import OneHotEncoder, StandardScaler  
+from sklearn.impute import SimpleImputer  
+from sklearn.pipeline import Pipeline  
 from src.ML_Project.exception import CustomException
 from src.ML_Project.logger import logging
-from sklearn.compose import ColumnTransformer  # type: ignore[reportMissingModuleSource]
+from sklearn.compose import ColumnTransformer  
 from src.ML_Project.utils import save_obj
 import os
 
@@ -49,7 +49,7 @@ class DataTransformation:
             return preprocessor
 
         except Exception as e:
-            raise CustomException(e, sys) # type: ignore
+            raise CustomException(e, sys)  # type: ignore
 
     def initiate_data_transformation(self, train_path, test_path):
         try:
